@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/typography.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    
+    <!-- Script -->
+    <script src="../javascript/administerKeyPress.js"></script>
+    <script src="../javascript/write.js"></script>
+    <script src="../javascript/calculator.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body class="bg">
+    <div class="container">
+        <div class="clear">
+            <a class="clear-button" onClick="Calculator.clear()">Clear</a>
+        </div>
+        <div class="calculator">
+            <div class="result-screen">
+                <a class="results" id="results"></a>
+            </div>
+            <div class="buttons">
+                <div class="button" onClick="administerKeyPress(1)"><a>1</a></div>
+                <div class="button" onClick="administerKeyPress(2)"><a>2</a></div>
+                <div class="button" onClick="administerKeyPress(3)"><a>3</a></div>
+                <div class="button" onClick="administerKeyPress(4)"><a>4</a></div>
+                <div class="button" onClick="administerKeyPress(5)"><a>5</a></div>
+                <div class="button" onClick="administerKeyPress(6)"><a>6</a></div>
+                <div class="button" onClick="administerKeyPress(7)"><a>7</a></div>
+                <div class="button" onClick="administerKeyPress(8)"><a>8</a></div>
+                <div class="button" onClick="administerKeyPress(9)"><a>9</a></div>
+                <div class="button" onClick="administerKeyPress('-')"><a>-</a></div>
+                <div class="button" onClick="administerKeyPress(0)"><a>0</a></div>
+                <div class="button" onClick="administerKeyPress('+')"><a>+</a></div>
+                <div class="button" onClick="administerKeyPress('/')"><a>/</a></div>
+                <div class="button" onClick="administerKeyPress('=')"><a>=</a></div>
+                <div class="button" onClick="administerKeyPress('*')"><a>*</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
